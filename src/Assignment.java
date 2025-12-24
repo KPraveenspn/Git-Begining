@@ -11,14 +11,22 @@ public class Assignment {
 
 		String text="Praveen";
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();    //to maximize the chrome window
+		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		
 		driver.findElement(By.id("name")).sendKeys(text);
 		driver.findElement(By.cssSelector("[id='alertbtn']")).click();
+		
 		System.out.println(driver.switchTo().alert().getText());
-		driver.switchTo().alert().accept();
+		
+		driver.switchTo().alert().accept();      //accept the alert here
+		
 		driver.findElement(By.id("confirmbtn")).click();
+		
 		System.out.println(driver.switchTo().alert().getText());
-		driver.switchTo().alert().dismiss();
+		
+		driver.switchTo().alert().dismiss();      //dismiss the alert
 		
 		
 		
