@@ -21,8 +21,8 @@ public class Miscelleanous {
 		
 		driver.get("http://google.com");
 		// Thread.sleep(3000);
-		
-		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 
+		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);   // this step take the screenshot
 		
 	     FileUtils.copyFile(src, new File("/Users/praveenkumar/downloads/screenshot.png"));  // this will save screenshot in local folder 
 	
