@@ -13,18 +13,24 @@ public class windowHandles {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");    //navigating to website
+		
 		driver.findElement(By.xpath("//a[contains(text(),'Free Access to')]")).click();
 		Set<String> windows = driver.getWindowHandles();     //[parentid, childid]
-		Iterator<String> it = windows.iterator();
-		String parentID = it.next();
-		String childID = it.next();
-		driver.switchTo().window(childID);
 		
-		System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
+		Iterator<String> it = windows.iterator();
+		String parentID = it.next();       // Parent Id
+		String childID = it.next();       // Child Id
+		
+		driver.switchTo().window(childID);    //Switching to child window
+		
+		System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());  //printing the child window title
+		
 		driver.findElement(By.cssSelector(".im-para.red")).getText();
 		String emailId = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
-		driver.switchTo().window(parentID);
+		
+		driver.switchTo().window(parentID);    //Switching back to parent window
+		
 		driver.findElement(By.id("username")).sendKeys(emailId);
 		
 		

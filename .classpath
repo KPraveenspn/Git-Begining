@@ -11,6 +11,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/praveenkumar/Downloads/commons-io-2.20.0/commons-io-2.20.0.jar"/>
+	<classpathentry kind="lib" path="/Users/praveenkumar/Downloads/commons-io-2.20.0.jar"/>
+	<classpathentry kind="lib" path="/Users/praveenkumar/Downloads/testng-7.11.0.jar"/>
+	<classpathentry kind="lib" path="/Users/praveenkumar/Downloads/webdrivermanager-6.3.3.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
