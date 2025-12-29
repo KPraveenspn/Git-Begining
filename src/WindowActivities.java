@@ -9,10 +9,13 @@ public class WindowActivities {
 		//System.setProperty("webdriver.chrome.driver", "/Users/praveenkumar/Documents/chromedriver-mac-arm64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("http://google.com");
+        
+        driver.get("http://google.com");    //launching google chrome
+        
         driver.navigate().to("https://rahulshettyacademy.com");
-        driver.navigate().back();
-        driver.navigate().forward();
+        
+        driver.navigate().back();       //navigating backward 
+        driver.navigate().forward();    //navigating forward 
 		
 		
 	}
