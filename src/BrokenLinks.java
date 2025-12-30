@@ -55,7 +55,7 @@ public class BrokenLinks {
 		driver.get("http://www.deadlinkcity.com/");
 
 
-        List<WebElement> links = driver.findElements(By.tagName("a"));
+        List<WebElement> links = driver.findElements(By.tagName("a"));  //list of broken links
         
 		for (WebElement link : links) {
             String url = link.getAttribute("href");
