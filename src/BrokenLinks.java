@@ -81,7 +81,7 @@ public class BrokenLinks {
                     } catch (Exception e) {
                         System.out.println(url + " --> Exception: " + e.getMessage());
                     }
-                });
+                };
 
         driver.quit();
 	}
