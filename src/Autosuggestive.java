@@ -11,11 +11,12 @@ public class Autosuggestive {
 		// TODO Auto-generated method stub
 
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");   //navigating to website
 		
-		driver.findElement(By.id("autosuggest")).sendKeys("ind");
+		driver.findElement(By.id("autosuggest")).sendKeys("ind");   //handling the Dropdown element
 		Thread.sleep(3000);
-		List<WebElement> options =driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
+		
+		List<WebElement> options =driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));   //List of WebElements
 		
 		for(WebElement option :options)
 		{
