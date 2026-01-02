@@ -16,7 +16,7 @@ public class CalendarTest {
 		String year = "2027";
 		String[] expectedList = {monthNumber,date,year};
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();   //driver initializing 
 		
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		driver.findElement(By.cssSelector(".react-date-picker__inputGroup")).click();
