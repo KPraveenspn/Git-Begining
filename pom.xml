@@ -19,7 +19,12 @@
     <version>7.10.2</version> 
 </dependency>
 
-  
+
+  	<dependency>
+  		<groupId>FirstFramework</groupId>
+  		<artifactId>ExtentReports</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
