@@ -18,13 +18,14 @@ public class base {
 		// TODO Auto-generated method stub
  
 		WebDriver driver = new ChromeDriver();
-		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);    //implicit wait 
 		
 		WebDriverWait w =new WebDriverWait(driver,Duration.ofSeconds(5));
 		
 		
-		String[] itemsNeeded={"Cucumber","Brocolli","Beetroot","Carrot"};
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
+		String[] itemsNeeded={"Cucumber","Brocolli","Beetroot","Carrot"};    //Array of string type
+		
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/");     //navigating to portal 
 		
 		 Thread.sleep(3000);
 		 addItems(driver,itemsNeeded);
@@ -33,14 +34,16 @@ public class base {
 		 //b.addItems(driver, itemsNeeded);
 		 
 		 driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+		 
 		 driver.findElement(By.xpath("//button[normalize-space()='PROCEED TO CHECKOUT']")).click();
-		 w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
+		 
+		 w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));   //explicit wait - wait until the condition satisfy 
 		 
 		 driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
 		 driver.findElement(By.cssSelector("button.promoBtn")).click();
-		  //explicit wait 
+		  
 		 
-		 w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
+		 w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));   //explicit wait
 		 
 		 System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
 		 
