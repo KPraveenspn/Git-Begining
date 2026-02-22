@@ -12,11 +12,13 @@ public class Filter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
-		driver.findElement(By.id("search-field")).sendKeys("Rice");
+		WebDriver driver = new ChromeDriver();  //initializing webdriver
 		
-		List<WebElement> veggies=driver.findElements(By.xpath("//tr/tf[1]"));
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers"); //navigating to website
+		
+		driver.findElement(By.id("search-field")).sendKeys("Rice");   //passing the value in input
+		
+		List<WebElement> veggies=driver.findElements(By.xpath("//tr/tf[1]"));   //List of WebElements
 		List<WebElement> filteredList=veggies.stream().filter(veggie->veggie.getText().contains("Rice"))
 				.collect(Collectors.toList());
 		
