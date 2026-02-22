@@ -11,14 +11,16 @@ public class CalendarTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String monthNumber = "6";
+		String monthNumber = "6";                       //Variables declaration
 		String date = "15";
 		String year = "2027";
 		String[] expectedList = {monthNumber,date,year};
 		
 		WebDriver driver = new ChromeDriver();   //driver initializing 
 		
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");          //navigating to website
+		
+		//Locators with Actions
 		driver.findElement(By.cssSelector(".react-date-picker__inputGroup")).click();
 		driver.findElement(By.cssSelector(".react-calendar__navigation__label")).click();
 		driver.findElement(By.cssSelector(".react-calendar__navigation__label")).click();
@@ -36,11 +38,11 @@ public class CalendarTest {
 		for(int i=0; i<actualList.size(); i++)
 		{
 			System.out.println(actualList.get(i).getAttribute("value"));
-			Assert.assertEquals(actualList.get(i).getAttribute("value"), expectedList[i]);
+			Assert.assertEquals(actualList.get(i).getAttribute("value"), expectedList[i]);    
 			
 		}
 		
-		driver.close();
+		driver.close();     //Closing the driver
 		
 		
 	}
