@@ -14,15 +14,17 @@ public class fluentWaitTest {
 	public static void main(String[] args) {
 		
 		
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
+		WebDriver driver = new ChromeDriver();  //Initializing WebDriver
+		
+		driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");   //Navigating to Website
 		driver.findElement(By.cssSelector("[id='start'] button")).click();
 		
+		//Fluent wait
 		Wait<WebDriver> wait=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(3))
 				.ignoring(NoSuchElementException.class);
 		
 		
-		WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
+		WebElement foo = wait.until(new Function<WebDriver, WebElement>() {   
 			
 		     public WebElement apply(WebDriver driver) {
 		       if(driver.findElement(By.cssSelector("[id='finish'] h4")).isDisplayed())
