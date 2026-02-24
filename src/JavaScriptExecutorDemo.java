@@ -12,12 +12,12 @@ public class JavaScriptExecutorDemo {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		 WebDriver driver = new ChromeDriver();
+		 WebDriver driver = new ChromeDriver();   //Initializing WebDriver
 		 
 		 
-		 JavascriptExecutor js =  (JavascriptExecutor)driver;
+		 JavascriptExecutor js =  (JavascriptExecutor)driver;    
 		 
-		 driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		 driver.get("https://rahulshettyacademy.com/AutomationPractice/");   //Navigating to Website
 		 
 		 js.executeScript("window.scrollBy(0,500)");
 		 Thread.sleep(3000);
@@ -40,7 +40,7 @@ public class JavaScriptExecutorDemo {
 		 int total = Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim()); 
 		 // this will get "296"
 		 
-		 Assert.assertEquals(sum, total);
+		 Assert.assertEquals(sum, total);   //Validating sum and total value 
 		 
 	}
 
