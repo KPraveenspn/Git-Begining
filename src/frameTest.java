@@ -10,19 +10,21 @@ public class frameTest {
 		// TODO Auto-generated method stub
 
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();   //Initializing WebDriver
 		
-		driver.get("https://jqueryui.com/droppable/");
+		driver.get("https://jqueryui.com/droppable/");    //Navigating to Website
 //		driver.switchTo().frame(1);
-		System.out.println(driver.findElements(By.tagName("iframe")).size());
+		
+		System.out.println(driver.findElements(By.tagName("iframe")).size()); 
 		driver.switchTo().frame(0);
 //		driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[class=\"demo-frame\"]")));
 //		driver.findElement(By.id("draggable")).click();
-		Actions a = new Actions(driver);
-		WebElement source = driver.findElement(By.id("draggable"));
-		WebElement target = driver.findElement(By.id("droppable"));
 		
-		a.dragAndDrop(source, target).build().perform();
+		Actions a = new Actions(driver);     //Action class
+		WebElement source = driver.findElement(By.id("draggable"));     //Source Frame id
+		WebElement target = driver.findElement(By.id("droppable"));     //Target Frame id
+		
+		a.dragAndDrop(source, target).build().perform();     
 		driver.switchTo().defaultContent();
 		
 		
