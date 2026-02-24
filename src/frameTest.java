@@ -24,8 +24,9 @@ public class frameTest {
 		WebElement source = driver.findElement(By.id("draggable"));     //Source Frame id
 		WebElement target = driver.findElement(By.id("droppable"));     //Target Frame id
 		
-		a.dragAndDrop(source, target).build().perform();     
-		driver.switchTo().defaultContent();
+		a.dragAndDrop(source, target).build().perform();     //Performing drag & drop action
+		
+		driver.switchTo().defaultContent();       //Switch back to default frame
 		
 		
 	}
