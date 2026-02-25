@@ -12,8 +12,9 @@ public class LiveDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+		WebDriver driver = new ChromeDriver();       //Initializing WebDriver
+		
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");       //Navigating to Website
 		
 		//Click on column 
 		driver.findElement(By.xpath("//tr/th[1]")).click();
