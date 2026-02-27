@@ -22,9 +22,10 @@ public class Locators {
 		
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
 		
-		driver.findElement(By.linkText("Forgot your password?")).click();
+		driver.findElement(By.linkText("Forgot your password?")).click();   //clicking the forget password link
 		Thread.sleep(1000);
 		
+		//filling out the user details
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Praveen");
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("praveen@test.com");
 		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
