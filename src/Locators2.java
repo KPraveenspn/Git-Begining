@@ -21,7 +21,9 @@ public class Locators2 {
 		driver.findElement(By.id("inputUsername")).sendKeys(name);
 		driver.findElement(By.name("inputPassword")).sendKeys(password);
 		driver.findElement(By.className("signInBtn")).click();
-		Thread.sleep(2000);
+		
+		Thread.sleep(2000);    //hard wait
+		
 		System.out.println(driver.findElement(By.tagName("p")).getText());
 	    Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
 		Assert.assertEquals(((WebElement) driver.findElement(By.cssSelector("div[class='login-container'] h2"))).getText(),"Hello "+name+",");
@@ -35,7 +37,7 @@ public class Locators2 {
 	
 	{
 		
-		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");      //navigate to website
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
