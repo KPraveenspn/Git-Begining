@@ -12,10 +12,12 @@ public class Locators2 {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
         String name = "rahul";
-		WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		WebDriver driver = new ChromeDriver();     //Initialize WebDriver
+		
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));  //implicity wait
+        
         String password = getPassword(driver);
-		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");     //navigate to website
 		driver.findElement(By.id("inputUsername")).sendKeys(name);
 		driver.findElement(By.name("inputPassword")).sendKeys(password);
 		driver.findElement(By.className("signInBtn")).click();
