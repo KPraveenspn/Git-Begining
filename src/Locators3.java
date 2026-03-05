@@ -8,11 +8,12 @@ public class Locators3 {
 		// TODO Auto-generated method stub
 
 		//System.setProperty("webdriver.chrome.driver", "/Users/praveenkumar/Documents/chromedriver-mac-arm64/chromedriver");
-        WebDriver driver = new ChromeDriver();
+		
+        WebDriver driver = new ChromeDriver();       //Initialize WebDriver
         //Siblings - Child to parent traverse 
         //header/div/button[1]/following-sibling::button[1]
         
-        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+        driver.get("https://rahulshettyacademy.com/AutomationPractice/");    //navigate to website
         System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
         
         System.out.println(driver.findElement(By.xpath("//header/div/button[1]/parent::div/button[2]")).getText());
