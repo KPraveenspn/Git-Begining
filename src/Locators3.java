@@ -9,11 +9,11 @@ public class Locators3 {
 
 		//System.setProperty("webdriver.chrome.driver", "/Users/praveenkumar/Documents/chromedriver-mac-arm64/chromedriver");
 		
-        WebDriver driver = new ChromeDriver();       //Initialize WebDriver
+        WebDriver driver = new ChromeDriver();       //Initialize WebDriver 
         //Siblings - Child to parent traverse 
         //header/div/button[1]/following-sibling::button[1]
         
-        driver.get("https://rahulshettyacademy.com/AutomationPractice/");    //navigate to website
+        driver.get("https://rahulshettyacademy.com/AutomationPractice/");    //navigate to Website
         
         System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
         
