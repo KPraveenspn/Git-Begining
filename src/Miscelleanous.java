@@ -12,10 +12,10 @@ public class Miscelleanous {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();  //Initializing the Webdriver
 		
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();   //maximizing the window
+		driver.manage().deleteAllCookies();    //clearing the cookies
 	//	driver.manage().deleteCookieNamed("sessionkey");  // to delete a specified cookies 
 		
 		
