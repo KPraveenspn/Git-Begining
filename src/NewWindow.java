@@ -16,8 +16,10 @@ public class NewWindow {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/angularpractice/");
+		WebDriver driver = new ChromeDriver();     //Initializing the Webdriver
+		
+		driver.get("https://rahulshettyacademy.com/angularpractice/");   //Navigating to Website
+		
 		driver.switchTo().newWindow(WindowType.TAB);     //to switch to new tab or window
 		
 		Set<String> handles = driver.getWindowHandles();     //these steps move control from parent to child tab 
