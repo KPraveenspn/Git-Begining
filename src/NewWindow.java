@@ -33,10 +33,11 @@ public class NewWindow {
 		String courseName=driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']"))
 				.get(1).getText();
 		
-		driver.switchTo().window(parentWindowId);
+		driver.switchTo().window(parentWindowId);   //switch to parent window
 		
 		WebElement name=driver.findElement(By.cssSelector("[name='name']"));
 		 name.sendKeys(courseName);
+		 
 		 //Screenshot steps for a particular field 
 		File file=name.getScreenshotAs(OutputType.FILE);
 		
