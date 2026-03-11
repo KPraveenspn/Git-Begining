@@ -9,8 +9,10 @@ public class RelativeLoc {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/angularpractice/");
+		WebDriver driver = new ChromeDriver();     //Initializing the Webdriver
+		
+		driver.get("https://rahulshettyacademy.com/angularpractice/");    //navigating to website
+		
 	    WebElement nameEditBox =driver.findElement(By.cssSelector("[name='name']"));
 	
 	    System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());
