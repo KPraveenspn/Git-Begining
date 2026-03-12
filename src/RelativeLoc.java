@@ -16,7 +16,9 @@ public class RelativeLoc {
 	    WebElement nameEditBox =driver.findElement(By.cssSelector("[name='name']"));
 	
 	    System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());
-	    WebElement dateofBirth =driver.findElement(By.cssSelector("[for='dateofBirth']"));
+	    
+	    WebElement dateofBirth =driver.findElement(By.cssSelector("[for='dateofBirth']"));   //Extracting DOB 
+	    
 	    driver.findElement(with(By.tagName("input")).below(dateofBirth)).click();
 	    
 	    WebElement iceCreamlevel =driver.findElement(By.xpath("//label[normalize-space()='Check me out if you Love IceCreams!']"));
