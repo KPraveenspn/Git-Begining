@@ -22,9 +22,11 @@ public class RelativeLoc {
 	    driver.findElement(with(By.tagName("input")).below(dateofBirth)).click();
 	    
 	    WebElement iceCreamlevel =driver.findElement(By.xpath("//label[normalize-space()='Check me out if you Love IceCreams!']"));
+	    
 	    driver.findElement(with(By.tagName("input")).toLeftOf(iceCreamlevel)).click();
 	    
 	    WebElement rdb =driver.findElement(By.id("inlineRadio1"));
+	    
 	    System.out.println(driver.findElement(with(By.tagName("label")).toRightOf(rdb)).getText());
 	    
 				
