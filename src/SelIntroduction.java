@@ -15,7 +15,7 @@ public class SelIntroduction {
 		// Selenium Manager
 		//System.setProperty("webdriver.chrome.driver", "/Users/praveenkumar/Documents/chromedriver-mac-arm64/chromedriver");
 		
-        WebDriver driver = new ChromeDriver();         //Initializing the WebDriverv
+        WebDriver driver = new ChromeDriver();         //Initializing the WebDriver
         driver.get("https://rahulshettyacademy.com/");
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());

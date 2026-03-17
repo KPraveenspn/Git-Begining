@@ -25,7 +25,7 @@ public class SSLCheck {
 		
 		options.setAcceptInsecureCerts(true);
 		
-		WebDriver driver = new ChromeDriver(options);
+		WebDriver driver = new ChromeDriver(options);     //Initializing the WebDriver
 		
 		driver.get("https://expired.badssl.com");
 		
