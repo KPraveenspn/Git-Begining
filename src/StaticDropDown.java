@@ -9,7 +9,8 @@ public class StaticDropDown {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver
+		
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		//dropdown with select tag
 		WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
