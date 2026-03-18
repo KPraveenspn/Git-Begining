@@ -11,7 +11,8 @@ public class StaticDropDown {
 
 		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver
 		
-		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");   //Navigating to Website
+		
 		//dropdown with select tag
 		WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		
