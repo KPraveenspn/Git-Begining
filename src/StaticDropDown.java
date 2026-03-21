@@ -16,8 +16,8 @@ public class StaticDropDown {
 		//dropdown with select tag
 		WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		
-		Select dropdown = new Select(staticDropdown);
-		dropdown.selectByIndex(3);
+		Select dropdown = new Select(staticDropdown); 
+		dropdown.selectByIndex(3); 
 		
 		System.out.println(dropdown.getFirstSelectedOption().getText());
 		
