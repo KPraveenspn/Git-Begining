@@ -13,7 +13,7 @@ public class StaticDropDown {
 		
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");   //Navigating to Website
 		
-		//dropdown with select tag
+		//DropDown with select tag
 		WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		
 		Select dropdown = new Select(staticDropdown); 
