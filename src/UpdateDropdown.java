@@ -8,7 +8,7 @@ public class UpdateDropdown {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
 		//checking the checkbox and validating
