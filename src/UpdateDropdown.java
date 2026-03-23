@@ -11,7 +11,7 @@ public class UpdateDropdown {
 		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
-		//checking the checkbox and validating
+		//checking the Checkbox and validating
 		Assert.assertFalse(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 		
 		//Assert.assertFalse(true);System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
@@ -20,7 +20,7 @@ public class UpdateDropdown {
 		
 		Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 		
-		//calender code
+		//Calender code
 		
 		//System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
 		System.out.println(driver.findElement(By.id("Div1")).getDomAttribute("style"));
