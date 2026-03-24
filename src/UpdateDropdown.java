@@ -24,6 +24,7 @@ public class UpdateDropdown {
 		
 		//System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
 		System.out.println(driver.findElement(By.id("Div1")).getDomAttribute("style"));
+		
 		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
 		
 		System.out.println(driver.findElement(By.id("Div1")).getDomAttribute("style"));
