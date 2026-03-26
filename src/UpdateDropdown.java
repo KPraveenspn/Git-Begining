@@ -58,6 +58,7 @@ public class UpdateDropdown {
 		i++;
 		
 	}*/
+		    
 		System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 		
 	for(int i=1;i<5;i++)
