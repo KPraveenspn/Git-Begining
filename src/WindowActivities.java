@@ -7,7 +7,8 @@ public class WindowActivities {
 		// TODO Auto-generated method stub
 
 		//System.setProperty("webdriver.chrome.driver", "/Users/praveenkumar/Documents/chromedriver-mac-arm64/chromedriver");
-        WebDriver driver = new ChromeDriver();
+		
+        WebDriver driver = new ChromeDriver();    //Initializing the WebDriver
         driver.manage().window().maximize();
         
         driver.get("http://google.com");    //launching google chrome
