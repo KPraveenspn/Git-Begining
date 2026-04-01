@@ -16,6 +16,7 @@ public class WindowActivities {
         driver.navigate().to("https://rahulshettyacademy.com"); //Navigating to website
         
         driver.navigate().back();       //navigating backward 
+        
         driver.navigate().forward();    //navigating forward 
 		
 		
