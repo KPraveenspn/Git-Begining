@@ -11,7 +11,7 @@ public class windowHandles {
 		// TODO Auto-generated method stub
 
 		
-		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver
+		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver 
 		
 		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");    //navigating to website
 		
