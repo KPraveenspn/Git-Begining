@@ -31,7 +31,7 @@ public class windowHandles {
 		
 		driver.switchTo().window(parentID);    //Switching back to parent window
 		
-		driver.findElement(By.id("username")).sendKeys(emailId);
+		driver.findElement(By.id("username")).sendKeys(emailId); 
 		
 		
 	}
