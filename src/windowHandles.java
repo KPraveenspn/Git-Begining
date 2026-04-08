@@ -19,7 +19,7 @@ public class windowHandles {
 		Set<String> windows = driver.getWindowHandles();     //[ parentid, childid ]
 		
 		Iterator<String> it = windows.iterator();
-		String parentID = it.next();       // Parent Id
+		String parentID = it.next();              // Parent Id
 		String childID = it.next();       // Child Id
 		
 		driver.switchTo().window(childID);    //Switching to child window
