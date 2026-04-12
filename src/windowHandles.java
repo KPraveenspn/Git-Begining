@@ -16,7 +16,7 @@ public class windowHandles {
 		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");    //navigating to website
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Free Access to')]")).click();
-		Set<String> windows = driver.getWindowHandles();     //[ ParentId, childid ]
+		Set<String> windows = driver.getWindowHandles();     //[ ParentId, ChildId ]
 		
 		Iterator<String> it = windows.iterator();
 		String parentID = it.next();              // Parent Id
