@@ -18,7 +18,7 @@ public class windowHandles {
 		driver.findElement(By.xpath("//a[contains(text(),'Free Access to')]")).click();
 		Set<String> windows = driver.getWindowHandles();     //[ ParentId, ChildId ]
 		
-		Iterator<String> it = windows.iterator();
+		Iterator<String> it = windows.iterator();    //Iterator class
 		String parentID = it.next();              // Parent Id
 		String childID = it.next();              // Child Id
 		
