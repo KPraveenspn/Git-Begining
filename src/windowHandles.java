@@ -13,7 +13,7 @@ public class windowHandles {
 		
 		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver 
 		
-		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");    //navigating to website
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");    //navigating to Website
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Free Access to')]")).click();
 		Set<String> windows = driver.getWindowHandles();     //[ ParentId, ChildId ]
