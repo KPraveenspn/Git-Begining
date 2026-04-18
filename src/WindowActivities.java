@@ -14,7 +14,7 @@ public class WindowActivities {
         
         driver.get("http://google.com");    //Launching google Chrome
         
-        driver.navigate().to("https://rahulshettyacademy.com");   //Navigating to Website
+        driver.navigate().to("https://rahulshettyacademy.com");    //Navigating to Website
         
         driver.navigate().back();       //navigating backward 
         
