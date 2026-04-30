@@ -13,14 +13,14 @@ public class windowHandles {
 		
 		WebDriver driver = new ChromeDriver();     //Initializing the WebDriver 
 		
-		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");    //Navigating to a Website
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");     //Navigating to a Website
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Free Access to')]")).click();
 		Set<String> windows = driver.getWindowHandles();      //[ ParentId, ChildId ]
 		
 		Iterator<String> it = windows.iterator();    //Iterator class
-		String parentID = it.next();              // Parent Id
-		String childID = it.next();              // Child Id
+		String parentID = it.next();                  // Parent Id
+		String childID = it.next();                  // Child Id
 		
 		driver.switchTo().window(childID);    //Switching to child window tab 
 		
@@ -29,7 +29,7 @@ public class windowHandles {
 		driver.findElement(By.cssSelector(".im-para.red")).getText();
 		String emailId = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
 		
-		driver.switchTo().window(parentID);     //Switching back to parent window
+		driver.switchTo().window(parentID);      //Switching back to parent window
 		
 		driver.findElement(By.id("username")).sendKeys(emailId);  
 		
