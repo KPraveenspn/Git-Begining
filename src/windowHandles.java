@@ -29,6 +29,7 @@ public class windowHandles {
 		
 		System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());     //printing the child window title
 		
+		
 		driver.findElement(By.cssSelector(".im-para.red")).getText();
 		String emailId = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
 		
