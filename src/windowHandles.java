@@ -33,6 +33,7 @@ public class windowHandles {
 		driver.findElement(By.cssSelector(".im-para.red")).getText();
 		String emailId = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
 		
+		
 		driver.switchTo().window(parentID);      //Switching back to parent window
 		
 		driver.findElement(By.id("username")).sendKeys(emailId);  
