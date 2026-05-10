@@ -8,6 +8,7 @@ public class WindowActivities {
 
 		//System.setProperty("webdriver.chrome.driver", "/Users/praveenkumar/Documents/chromedriver-mac-arm64/chromedriver");
 		
+		
         WebDriver driver = new ChromeDriver();    //Initializing the WebDriver
         
         driver.manage().window().maximize();     //To maximize the window6
