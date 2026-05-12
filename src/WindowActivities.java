@@ -13,7 +13,7 @@ public class WindowActivities {
         
         driver.manage().window().maximize();     //To maximize the window6
         
-        driver.get("http://google.com");    //Launching google Chrome
+        driver.get("http://google.com");      //Launching google Chrome
         
         driver.navigate().to("https://rahulshettyacademy.com");    //Navigating to Website
         
