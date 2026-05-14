@@ -24,7 +24,7 @@ public class windowHandles {
 		String childID = it.next();                  // Child Id
 		
 		
-		driver.switchTo().window(childID);    //Switching to child window tab 
+		driver.switchTo().window(childID);      //Switching to child window tab 
 		
 		System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());     //printing the child window title
 		
