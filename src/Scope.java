@@ -21,7 +21,7 @@ public class Scope {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		System.out.println(driver.findElements(By.tagName("a")).size());
 		
-		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));   // Limiting the web driver scope
+		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));      //Limiting the web driver scope
 		
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 		
