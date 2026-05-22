@@ -12,11 +12,11 @@ public class Scope {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-//1. Give me the count of links on the page
+        //1. Give me the count of links on the page
 		//a
 		//2. Count of footer section
 		
-		WebDriver driver = new ChromeDriver();   //Initializing the WebDriver
+		WebDriver driver = new ChromeDriver();    //Initializing the WebDriver
 		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		System.out.println(driver.findElements(By.tagName("a")).size());
