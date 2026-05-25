@@ -26,13 +26,13 @@ public class Scope {
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 		
 		
-		//3. count the link in 1st coloumn of footer section
+		//3. Count the link in 1st coloumn of footer section
 		WebElement coloumndriver = footerdriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
 		
 		System.out.println(coloumndriver.findElements(By.tagName("a")).size());
 		
 		
-		//4. click on each link in the coloumn and check if pages are opening- 
+		//4. Click on each link in the coloumn and check if pages are opening- 
 		for(int i=1; i<coloumndriver.findElements(By.tagName("a")).size(); i++)
 		{
 			
