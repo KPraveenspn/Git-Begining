@@ -32,7 +32,7 @@ public class Scope {
 		System.out.println(coloumndriver.findElements(By.tagName("a")).size());
 		
 		
-		//4. Click on each link in the coloumn and check if pages are opening- 
+		//4. Click on each link in the coloumn and check if pages are opening-  
 		for(int i=1; i<coloumndriver.findElements(By.tagName("a")).size(); i++)
 		{
 			
@@ -41,7 +41,7 @@ public class Scope {
 			coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinktab);
 			Thread.sleep(5000L);
 			
-		}  // Opens all the tabs
+		}   // Opens all the tabs
 		
 			
 		Set<String> abc=driver.getWindowHandles(); //4
