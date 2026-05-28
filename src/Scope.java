@@ -13,7 +13,7 @@ public class Scope {
 		// TODO Auto-generated method stub
 
         //1. Give me the count of links on the page
-		//a
+		
 		//2. Count of footer section
 		
 		WebDriver driver = new ChromeDriver();        //Initializing the WebDriver
