@@ -41,7 +41,7 @@ public class Scope {
 			coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinktab);
 			Thread.sleep(5000L);
 			
-		}   // Opens all the tabs
+		}    //Open all the tabs
 		
 			
 		Set<String> abc=driver.getWindowHandles(); //4
