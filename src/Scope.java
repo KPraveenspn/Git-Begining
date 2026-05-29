@@ -16,7 +16,7 @@ public class Scope {
 		
 		//2. Count of footer section
 		
-		WebDriver driver = new ChromeDriver();        //Initializing the WebDriver
+		WebDriver driver = new ChromeDriver();      //Initializing the WebDriver
 		
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");      //Navigating to testing website
 		System.out.println(driver.findElements(By.tagName("a")).size());
