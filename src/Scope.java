@@ -18,8 +18,8 @@ public class Scope {
 		
 		WebDriver driver = new ChromeDriver();      //Initializing the WebDriver
 		
-		driver.get("https://rahulshettyacademy.com/AutomationPractice/");      //Navigating to testing website
-		System.out.println(driver.findElements(By.tagName("a")).size());
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");      //Navigating to testing Website
+		System.out.println(driver.findElements(By.tagName("a")).size());      //Printing the total no. of anchor tag
 		
 		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));      //Limiting the web driver scope
 		
