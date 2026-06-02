@@ -32,7 +32,8 @@ public class Scope {
 		System.out.println(coloumndriver.findElements(By.tagName("a")).size());
 		
 		
-		//4. Click on each link in the coloumn and check if pages are opening-  
+		//4. Click on each link in the coloumn and check if pages are opening- 
+		
 		for(int i=1; i<coloumndriver.findElements(By.tagName("a")).size(); i++)
 		{
 			
