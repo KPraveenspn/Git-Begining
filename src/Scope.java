@@ -20,12 +20,12 @@ public class Scope {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");      //Navigating to testing Website
 		System.out.println(driver.findElements(By.tagName("a")).size());      //Printing the total no. of anchor tag
 		
-		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));      //Limiting the web driver scope
+		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));     //Limiting the web driver scope
 		
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 		
 		
-		//3. Count the link in 1st coloumn of footer section
+		//3. Count the link in 1st coloumn of footer section 
 		
 		WebElement coloumndriver = footerdriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
 		
