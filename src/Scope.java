@@ -25,7 +25,7 @@ public class Scope {
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 		
 		
-		//3. Count the link in 1st coloumn of footer section 
+		//3. Count the link in 1st Coloumn of footer section  
 		
 		WebElement coloumndriver = footerdriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
 		
