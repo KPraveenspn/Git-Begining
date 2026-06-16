@@ -17,10 +17,10 @@ public class Scope {
 		
 		WebDriver driver = new ChromeDriver();      //Initializing the WebDriver
 		
-		driver.get("https://rahulshettyacademy.com/AutomationPractice/");      //Navigating to testing Website
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");      //Navigating to testing Website 
 		System.out.println(driver.findElements(By.tagName("a")).size());      //Printing the total no. of anchor tag
 		
-		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));     //Limiting the web driver scope
+		WebElement footerdriver = driver.findElement(By.id("gf-BIG"));    //Limiting the web driver scope
 		
 		System.out.println(footerdriver.findElements(By.tagName("a")).size());
 		
