@@ -19,6 +19,7 @@ public class Filter {
 		driver.findElement(By.id("search-field")).sendKeys("Rice");   //passing the value in input
 		
 		List<WebElement> veggies=driver.findElements(By.xpath("//tr/tf[1]"));   //List of WebElements
+		
 		List<WebElement> filteredList=veggies.stream().filter(veggie->veggie.getText().contains("Rice"))
 				.collect(Collectors.toList());
 		
