@@ -48,6 +48,7 @@ public class Scope {
 		Set<String> abc=driver.getWindowHandles(); //4
 			Iterator<String> it=abc.iterator();
 			
+			
 			while(it.hasNext())       //It will iterate all the tabs to give the title
 			{
 				
