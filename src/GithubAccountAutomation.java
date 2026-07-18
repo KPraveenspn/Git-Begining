@@ -13,10 +13,10 @@ public class GithubAccountAutomation {
 	public static void main(String[] args) {
 		
 
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--start-maximized");
+		ChromeOptions options = new ChromeOptions();  //Chrome Options
+		options.addArguments("--start-maximized");    //Maximising the window
 		
-		WebDriver wd = new ChromeDriver(options);
+		WebDriver wd = new ChromeDriver(options);     //Invoking the chrome driver with options
 		
 		wd.get("https://github.com/signup");
 		
