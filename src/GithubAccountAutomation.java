@@ -18,7 +18,7 @@ public class GithubAccountAutomation {
 		
 		WebDriver wd = new ChromeDriver(options);     //Invoking the chrome driver with options
 		
-		wd.get("https://github.com/signup");
+		wd.get("https://github.com/signup");    //Navigating to Website
 		
 		WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
 		
