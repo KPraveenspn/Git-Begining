@@ -20,7 +20,7 @@ public class GithubAccountAutomation {
 		
 		wd.get("https://github.com/signup");    //Navigating to Website
 		
-		WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));      //Explicit Wait
 		
 		By emailTextBoxLocator = By.id("email");
 		WebElement emailTextBox = wait.until(ExpectedConditions.visibilityOfElementLocated(emailTextBoxLocator));
