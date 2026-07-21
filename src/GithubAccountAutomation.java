@@ -22,7 +22,7 @@ public class GithubAccountAutomation {
 		
 		WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));      //Explicit Wait
 		
-		By emailTextBoxLocator = By.id("email");      //Locator using By class
+		By emailTextBoxLocator = By.id("email");      //Locator using By class 
 		WebElement emailTextBox = wait.until(ExpectedConditions.visibilityOfElementLocated(emailTextBoxLocator));
 		emailTextBox.sendKeys("praveen1234@gmail.com");   
 		
