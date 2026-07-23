@@ -1,6 +1,10 @@
+import java.io.File;
 import java.time.Duration;
 
+import org.apache.maven.shared.utils.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,6 +13,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GithubAccountAutomation {
+
+	
+	private static final String str = null;
 
 	public static void main(String[] args) {
 		
@@ -19,6 +26,16 @@ public class GithubAccountAutomation {
 		WebDriver wd = new ChromeDriver(options);     //Invoking the chrome driver with options
 		
 		wd.get("https://github.com/signup");    //Navigating to Website
+		
+		TakesScreenshot screenshot = (TakesScreenshot) wd;
+		File file =screenshot.getScreenshotAs(OutputType.FILE);
+		File output = new File("Screenshot.png");
+		
+		try {
+			FileUtils.copyFile(file, output);
+		} catch (java.io.IOException e) {
+			e.printStackTrace();
+		}
 		
 		WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));      //Explicit Wait
 		
@@ -45,6 +62,7 @@ public class GithubAccountAutomation {
 		By countryButtonLocator = By.xpath("//span[contains(text(),'Albania')]/..");
 		WebElement countryButton= wait.until(ExpectedConditions.visibilityOfElementLocated(countryButtonLocator));
 		countryButton.click();
+		
 		
 		
 
