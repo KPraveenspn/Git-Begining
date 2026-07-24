@@ -1,9 +1,6 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-
 public class UpdateJson {
 
 	public static void main(String[] args) {
