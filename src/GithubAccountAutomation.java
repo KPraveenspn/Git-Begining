@@ -43,9 +43,9 @@ public class GithubAccountAutomation {
 		WebElement emailTextBox = wait.until(ExpectedConditions.visibilityOfElementLocated(emailTextBoxLocator));
 		emailTextBox.sendKeys("praveen1234@gmail.com");     //Action step
 		
-		By passwordTextBoxLocator = By.id("password");
+		By passwordTextBoxLocator = By.id("password");     //Locator using By class 
 		WebElement passwordTextBox = wait.until(ExpectedConditions.visibilityOfElementLocated(passwordTextBoxLocator));
-		passwordTextBox.sendKeys("praveen1234@");
+		passwordTextBox.sendKeys("praveen1234@");        //Action step
 		
 		By userNameTextBoxLocator = By.id("login");
 		WebElement userNameTextBox = wait.until(ExpectedConditions.visibilityOfElementLocated(userNameTextBoxLocator));
